@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'com.bunjlabs'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.bunjlabs.fuga:fuga-common:0.8.1'
+    implementation 'com.bunjlabs.fuga:fuga-context:0.8.1'
+    implementation 'com.bunjlabs.fuga:fuga-inject:0.8.1'
+    implementation 'com.bunjlabs.fuga:fuga-settings:0.8.1'
+    implementation 'com.bunjlabs.fuga:fuga-logging:0.8.1'
+
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'ch.qos.logback:logback-classic:1.2.5'
+
+    implementation 'io.netty:netty-all:4.1.67.Final'
+
+    implementation 'dev.morphia.morphia:morphia-core:2.2.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}

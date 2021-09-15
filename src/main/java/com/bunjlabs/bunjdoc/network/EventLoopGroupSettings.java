@@ -16,9 +16,9 @@
 
 package com.bunjlabs.bunjdoc.network;
 
-import com.bunjlabs.fuga.settings.SettingDefault;
-import com.bunjlabs.fuga.settings.SettingName;
-import com.bunjlabs.fuga.settings.Settings;
+import fuga.settings.SettingDefault;
+import fuga.settings.SettingName;
+import fuga.settings.Settings;
 
 @Settings("networking")
 public interface EventLoopGroupSettings {

@@ -1,10 +1,10 @@
 package com.bunjlabs.bunjdoc;
 
-import com.bunjlabs.fuga.context.FugaBoot;
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.logging.LoggingUnitBuilder;
-import com.bunjlabs.fuga.settings.SettingsUnitBuilder;
-import com.bunjlabs.fuga.settings.source.LocalFilesSettingsSource;
+import fuga.context.FugaBoot;
+import fuga.inject.Configuration;
+import fuga.logging.LoggingUnitBuilder;
+import fuga.settings.SettingsUnitBuilder;
+import fuga.settings.source.LocalFilesSettingsSource;
 import com.bunjlabs.bunjdoc.database.MongoUnit;
 import com.bunjlabs.bunjdoc.handlers.AppHandler;
 import com.bunjlabs.bunjdoc.network.NetworkSupportUnit;
@@ -59,10 +59,10 @@ public class BunjdocBootstrap {
     }
 
     private void configureApplication(Configuration c) {
-        c.bind(BunjdocServerSettings.class).auto();
+        c.bind(BunjdocServerSettings.class);
         c.bind(WebSocketHandler.class).to(AppHandler.class);
-        c.bind(AppHandler.class).auto();
-        c.bind(BunjdocApplication.class).auto();
+        c.bind(AppHandler.class);
+        c.bind(BunjdocApplication.class);
     }
 
 }

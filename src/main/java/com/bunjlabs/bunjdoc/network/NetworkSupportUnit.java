@@ -16,20 +16,20 @@
 
 package com.bunjlabs.bunjdoc.network;
 
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.inject.Singleton;
-import com.bunjlabs.fuga.inject.Unit;
+import fuga.inject.Configuration;
+import fuga.inject.Singleton;
+import fuga.inject.Unit;
 
 public class NetworkSupportUnit implements Unit {
 
     @Override
     public void setup(Configuration c) {
-        c.bind(EventLoopGroupSettings.class).auto();
+        c.bind(EventLoopGroupSettings.class);
 
-        c.bind(DefaultEventLoopGroupManager.class).auto().in(Singleton.class);
+        c.bind(DefaultEventLoopGroupManager.class).in(Singleton.class);
         c.bind(EventLoopGroupManager.class).to(DefaultEventLoopGroupManager.class);
 
-        c.bind(DefaultConnectionRegistry.class).auto().in(Singleton.class);
+        c.bind(DefaultConnectionRegistry.class).in(Singleton.class);
         c.bind(ConnectionRegistry.class).to(DefaultConnectionRegistry.class);
     }
 }

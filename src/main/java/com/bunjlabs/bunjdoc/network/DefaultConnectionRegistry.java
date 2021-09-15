@@ -16,7 +16,7 @@
 
 package com.bunjlabs.bunjdoc.network;
 
-import com.bunjlabs.fuga.inject.Inject;
+import fuga.inject.Inject;
 import io.netty.channel.Channel;
 
 import java.util.ArrayList;

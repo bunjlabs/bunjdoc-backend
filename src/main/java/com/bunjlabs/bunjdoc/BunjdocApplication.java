@@ -1,8 +1,8 @@
 package com.bunjlabs.bunjdoc;
 
 
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Injector;
+import fuga.inject.Inject;
+import fuga.inject.Injector;
 import com.bunjlabs.bunjdoc.websocket.WebSocketHandler;
 import com.bunjlabs.bunjdoc.websocket.server.WebSocketServer;
 import dev.morphia.Datastore;

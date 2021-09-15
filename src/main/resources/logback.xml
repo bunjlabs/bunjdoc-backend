@@ -10,7 +10,7 @@
     <logger name="io.netty" level="WARN"/>
     <logger name="org.mongodb" level="WARN"/>
     <logger name="org.bson" level="WARN"/>
-    <logger name="com.bunjlabs.fuga" level="WARN"/>
+    <logger name="fuga" level="WARN"/>
     <logger name="com.bunjlabs.bunjdoc" level="DEBUG"/>
 
     <root level="TRACE">

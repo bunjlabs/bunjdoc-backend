@@ -16,8 +16,8 @@
 
 package com.bunjlabs.bunjdoc.network;
 
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Singleton;
+import fuga.inject.Inject;
+import fuga.inject.Singleton;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;

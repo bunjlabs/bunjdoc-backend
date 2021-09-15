@@ -1,7 +1,7 @@
 package com.bunjlabs.bunjdoc.database;
 
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Provider;
+import fuga.inject.Inject;
+import fuga.inject.Provider;
 import com.mongodb.client.MongoClient;
 import dev.morphia.Datastore;
 import dev.morphia.Morphia;

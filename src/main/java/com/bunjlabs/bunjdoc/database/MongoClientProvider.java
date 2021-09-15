@@ -16,8 +16,8 @@
 
 package com.bunjlabs.bunjdoc.database;
 
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Provider;
+import fuga.inject.Inject;
+import fuga.inject.Provider;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

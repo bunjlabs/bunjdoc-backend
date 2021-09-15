@@ -16,7 +16,8 @@
 
 package com.bunjlabs.bunjdoc.network;
 
-import com.bunjlabs.fuga.util.Assert;
+import fuga.util.Assert;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -34,7 +35,7 @@ class DefaultThreadFactory implements ThreadFactory {
     }
 
     @Override
-    public Thread newThread(Runnable runnable) {
+    public Thread newThread(@NotNull Runnable runnable) {
         var thread = new Thread(runnable, prefix + nextId.incrementAndGet());
         try {
             if (thread.isDaemon()) {

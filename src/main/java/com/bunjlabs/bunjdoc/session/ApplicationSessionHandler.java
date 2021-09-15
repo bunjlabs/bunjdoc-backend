@@ -1,6 +1,6 @@
 package com.bunjlabs.bunjdoc.session;
 
-import com.bunjlabs.fuga.inject.Inject;
+import fuga.inject.Inject;
 import com.bunjlabs.bunjdoc.session.messages.EchoMessage;
 import com.bunjlabs.bunjdoc.session.messages.Message;
 import dev.morphia.Datastore;

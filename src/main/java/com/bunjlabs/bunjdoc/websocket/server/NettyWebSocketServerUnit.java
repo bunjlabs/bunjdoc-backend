@@ -16,16 +16,16 @@
 
 package com.bunjlabs.bunjdoc.websocket.server;
 
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.inject.Singleton;
-import com.bunjlabs.fuga.inject.Unit;
+import fuga.inject.Configuration;
+import fuga.inject.Singleton;
+import fuga.inject.Unit;
 import com.bunjlabs.bunjdoc.websocket.server.netty.NettyWebSocketServer;
 
 public class NettyWebSocketServerUnit implements Unit {
 
     @Override
     public void setup(Configuration c) {
-        c.bind(NettyWebSocketServer.class).auto().in(Singleton.class);
+        c.bind(NettyWebSocketServer.class).in(Singleton.class);
         c.bind(WebSocketServer.class).to(NettyWebSocketServer.class);
     }
 }

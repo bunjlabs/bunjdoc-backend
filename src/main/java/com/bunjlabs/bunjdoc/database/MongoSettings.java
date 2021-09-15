@@ -16,8 +16,8 @@
 
 package com.bunjlabs.bunjdoc.database;
 
-import com.bunjlabs.fuga.settings.SettingDefault;
-import com.bunjlabs.fuga.settings.Settings;
+import fuga.settings.SettingDefault;
+import fuga.settings.Settings;
 
 @Settings("mongodb")
 public interface MongoSettings {

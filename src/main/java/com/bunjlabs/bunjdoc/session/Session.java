@@ -1,8 +1,8 @@
 package com.bunjlabs.bunjdoc.session;
 
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Injector;
+import fuga.inject.Configuration;
+import fuga.inject.Inject;
+import fuga.inject.Injector;
 import com.bunjlabs.bunjdoc.handlers.AppHandler;
 import com.bunjlabs.bunjdoc.session.messages.Message;
 import org.slf4j.Logger;
@@ -23,7 +23,7 @@ public class Session {
     private void configureSession(Configuration c) {
         c.bind(Session.class).toInstance(this);
 
-        c.bind(AuthSessionHandler.class).auto();
+        c.bind(AuthSessionHandler.class);
     }
 
     public Injector getInjector() {

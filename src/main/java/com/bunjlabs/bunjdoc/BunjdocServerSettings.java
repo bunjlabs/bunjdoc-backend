@@ -1,6 +1,6 @@
 package com.bunjlabs.bunjdoc;
 
-import com.bunjlabs.fuga.settings.Settings;
+import fuga.settings.Settings;
 
 @Settings("websocket")
 public interface BunjdocServerSettings {

@@ -16,9 +16,9 @@
 
 package com.bunjlabs.bunjdoc.database;
 
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.inject.Singleton;
-import com.bunjlabs.fuga.inject.Unit;
+import fuga.inject.Configuration;
+import fuga.inject.Singleton;
+import fuga.inject.Unit;
 import com.mongodb.client.MongoClient;
 import dev.morphia.Datastore;
 
@@ -26,9 +26,9 @@ public class MongoUnit implements Unit {
 
     @Override
     public void setup(Configuration c) {
-        c.bind(MongoSettings.class).auto();
-        c.bind(MongoClientProvider.class).auto();
-        c.bind(DatastoreProvider.class).auto();
+        c.bind(MongoSettings.class);
+        c.bind(MongoClientProvider.class);
+        c.bind(DatastoreProvider.class);
 
         c.bind(MongoClient.class).toProvider(MongoClientProvider.class).in(Singleton.class);
         c.bind(Datastore.class).toProvider(DatastoreProvider.class).in(Singleton.class);

@@ -1,6 +1,6 @@
 package com.bunjlabs.bunjdoc.session;
 
-import com.bunjlabs.fuga.inject.Inject;
+import fuga.inject.Inject;
 import com.bunjlabs.bunjdoc.model.User;
 import com.bunjlabs.bunjdoc.model.UserToken;
 import com.bunjlabs.bunjdoc.session.messages.AuthMessage;

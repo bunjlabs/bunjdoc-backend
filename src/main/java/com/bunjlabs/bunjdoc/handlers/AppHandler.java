@@ -1,8 +1,8 @@
 package com.bunjlabs.bunjdoc.handlers;
 
-import com.bunjlabs.fuga.inject.Configuration;
-import com.bunjlabs.fuga.inject.Inject;
-import com.bunjlabs.fuga.inject.Injector;
+import fuga.inject.Configuration;
+import fuga.inject.Inject;
+import fuga.inject.Injector;
 import com.bunjlabs.bunjdoc.EmptyWebSocketHandler;
 import com.bunjlabs.bunjdoc.session.Session;
 import com.bunjlabs.bunjdoc.session.messages.AuthMessage;

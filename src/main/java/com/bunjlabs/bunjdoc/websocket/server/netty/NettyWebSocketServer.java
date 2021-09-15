@@ -16,7 +16,7 @@
 
 package com.bunjlabs.bunjdoc.websocket.server.netty;
 
-import com.bunjlabs.fuga.inject.Inject;
+import fuga.inject.Inject;
 import com.bunjlabs.bunjdoc.network.ConnectionRegistry;
 import com.bunjlabs.bunjdoc.network.EventLoopGroupManager;
 import com.bunjlabs.bunjdoc.websocket.server.WebSocketHandlerFactory;

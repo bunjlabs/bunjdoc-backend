@@ -16,7 +16,7 @@
 
 package com.bunjlabs.bunjdoc.websocket.netty;
 
-import com.bunjlabs.fuga.util.ObjectUtils;
+import fuga.util.ObjectUtils;
 import com.bunjlabs.bunjdoc.websocket.WebSocket;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
